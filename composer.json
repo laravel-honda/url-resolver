@@ -35,13 +35,6 @@
         "sort-packages": true,
         "preferred-install": "dist"
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Honda\\Support\\SupportServiceProvider"
-            ]
-        }
-    },
     "scripts": {
         "lint": "php-cs-fixer fix -v",
         "test:lint": "php-cs-fixer fix -v --dry-run",
