@@ -1,6 +1,6 @@
 <?php
 
-namespace Honda\Support\Support;
+namespace Honda\UrlResolver;
 
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
