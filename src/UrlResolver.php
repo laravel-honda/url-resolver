@@ -2,24 +2,29 @@
 
 namespace Honda\UrlResolver;
 
+use Illuminate\Routing\UrlGenerator;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 class UrlResolver
 {
+    /**
+     * @param mixed[] $context
+     */
     public static function guess(?string $url = '', array $context = []): string
     {
         if (empty($url)) {
-            return '/' . ltrim(request()->path(), '/');
-        }
-
-        if (str_contains($url, '/')) {
-            return $url;
+            return app(UrlGenerator::class)->to(
+                app('request')->path()
+            );
         }
 
         try {
             return route($url, $context);
-        } catch (RouteNotFoundException $exception) {
-            return $url;
+        } catch (RouteNotFoundException $_) {
+            /** @var string $url */
+            $url = url($url);
         }
+
+        return $url;
     }
 }
