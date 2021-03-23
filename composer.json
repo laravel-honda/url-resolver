@@ -29,6 +29,17 @@
             "Honda\\UrlResolver\\Tests\\": "tests/"
         }
     },
+    "scripts": {
+        "lint": "php-cs-fixer fix -v",
+        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "test:types": "phpstan analyse --ansi --memory-limit=0",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
