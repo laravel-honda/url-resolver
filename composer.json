@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^7.4 | ^8",
         "illuminate/contracts": "^8"
     },
     "require-dev": {
@@ -45,5 +45,5 @@
     "config": {
         "sort-packages": true,
         "preferred-install": "dist"
-    }    
+    }
 }

@@ -7,9 +7,6 @@ use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 class UrlResolver
 {
-    /**
-     * @param mixed[] $context
-     */
     public static function guess(?string $url = '', array $context = []): string
     {
         if (empty($url)) {
