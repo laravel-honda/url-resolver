@@ -27,3 +27,7 @@ it('returns the given url if the route does not exist', function () {
 it('returns the current url if null is given', function () {
     expect(UrlResolver::guess())->toBe('http://localhost');
 });
+
+it('returns the same url if an external url is given', function () {
+    expect(UrlResolver::guess('https://github.com/felixdorn'))->toBe('https://github.com/felixdorn');
+});

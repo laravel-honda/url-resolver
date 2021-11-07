@@ -1,6 +1,6 @@
 {
     "name": "honda/url-resolver",
-    "description": "url-resolver",
+    "description": "Resolves a given string to a URL",
     "license": "MIT",
     "authors": [
         {
@@ -9,14 +9,14 @@
         }
     ],
     "require": {
-        "php": "^7.4 | ^8",
+        "php": "^8",
         "illuminate/contracts": "^8"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16.4",
+        "friendsofphp/php-cs-fixer": "^3",
         "orchestra/testbench": "^6.13",
         "pestphp/pest": "^1.0.5",
-        "phpstan/phpstan": "^0.12.48",
+        "phpstan/phpstan": "^1",
         "symfony/var-dumper": "^5.2.0"
     },
     "autoload": {
@@ -32,7 +32,7 @@
     "scripts": {
         "lint": "php-cs-fixer fix -v",
         "test:lint": "php-cs-fixer fix -v --dry-run",
-        "test:types": "phpstan analyse --ansi --memory-limit=0",
+        "test:types": "phpstan analyse --ansi --memory-limit=-1",
         "test:unit": "pest --colors=always",
         "test": [
             "@test:lint",
