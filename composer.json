@@ -1,23 +1,30 @@
 {
     "name": "honda/url-resolver",
-    "description": "Resolves a given string to a URL",
+    "description": "Resolve routes and urls with one function.",
+    "keywords": [
+        "laravel",
+        "url",
+        "resolver",
+        "url-resolver"
+    ],
     "license": "MIT",
     "authors": [
         {
             "name": "Félix Dorn",
-            "email": "contact@felixdorn.fr"
+            "email": "contact@felixdorn.fr",
+            "homepage": "https://felixdorn.fr"
         }
     ],
     "require": {
-        "php": "^8",
-        "illuminate/contracts": "^8"
+        "php": "^8.0|^8.1",
+        "illuminate/contracts": "^8|^9"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3",
-        "orchestra/testbench": "^6.13",
+        "orchestra/testbench": "^v6.25|^7.7",
         "pestphp/pest": "^1.0.5",
         "phpstan/phpstan": "^1",
-        "symfony/var-dumper": "^5.2.0"
+        "symfony/var-dumper": "^5|^6.1"
     },
     "autoload": {
         "psr-4": {

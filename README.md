@@ -1,6 +1,8 @@
-[<img src="art/banner.png" width="419px" />](art/banner.png)s
+[<img src="art/banner.png" width="419px" />](art/banner.png)
 
-# Url Resolver
+# Url Resolver for Laravel
+
+Resolve routes and urls with one function.
 
 [![Tests](https://github.com/laravel-honda/url-resolver/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/laravel-honda/url-resolver/actions/workflows/tests.yml)
 [![Formats](https://github.com/laravel-honda/url-resolver/actions/workflows/formats.yml/badge.svg?branch=master)](https://github.com/laravel-honda/url-resolver/actions/workflows/formats.yml)
@@ -10,12 +12,12 @@
 
 ## Installation
 
-> Requires [PHP 8.0.0+](https://php.net/releases)
+> Requires [PHP 8.0+](https://php.net/releases)
 
 You can install the package via composer:
 
 ```bash
-composer require honda/url-resolver
+composer require felixdorn/laravel-url-resolver
 ```
 
 ## Usage
@@ -28,7 +30,6 @@ UrlResolver::guess('welcome', []);
 
 * **The route exists:** `route('...', $context)`
 * **The route does not exist:** `url(...')`
-* **The route is null:** `url()`
 * **The "route" is an external URL:** returns it
 
 ## Testing
