@@ -50,6 +50,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": "*"
+        },
         "sort-packages": true,
         "preferred-install": "dist"
     }
